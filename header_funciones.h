@@ -5,5 +5,4 @@
 
 void nuevoIndiceProvincial(float indicesDeProvinciaPorRubro[CANTIDAD_PROVINCIAS][CANTIDAD_RUBROS]);
 
-
 #endif // HEADER_FUNCIONES_H_INCLUDED

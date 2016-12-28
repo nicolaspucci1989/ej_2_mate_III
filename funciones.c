@@ -1,7 +1,6 @@
-// Nuevo indice provincial para cada provincial
+#include <stdio.h>
+#include <stdlib.h>
 #include "header_funciones.h"
-#include "estructuras_datos.h"
-
 
 void nuevoIndiceProvincial(float indicesDeProvinciaPorRubro[CANTIDAD_PROVINCIAS][CANTIDAD_RUBROS])
 {
