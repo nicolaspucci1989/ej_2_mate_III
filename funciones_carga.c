@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "header_carga.h"
+#include "estructuras_datos.h"
 
 // 2 provincias, 2 rubros
 void cargarIndicesProvinciaRubro(float indicesDeProvinciaPorRubro[CANTIDAD_PROVINCIAS][CANTIDAD_RUBROS])

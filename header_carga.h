@@ -5,5 +5,4 @@
 
 void cargarIndicesProvinciaRubro(float indicesDeProvinciaPorRubro[CANTIDAD_PROVINCIAS][CANTIDAD_RUBROS]);
 
-
 #endif // HEADER_CARGA_H_INCLUDED

@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "header_funciones.h"
+#include "estructuras_datos.h"
 
 void nuevoIndiceProvincial(float indicesDeProvinciaPorRubro[CANTIDAD_PROVINCIAS][CANTIDAD_RUBROS])
 {
@@ -10,7 +11,7 @@ void nuevoIndiceProvincial(float indicesDeProvinciaPorRubro[CANTIDAD_PROVINCIAS]
   void imprimirAcumulador(float acumulador[CANTIDAD_PROVINCIAS]);
 
   for(i = 0; i < CANTIDAD_PROVINCIAS; i++){
-    for(j = 0; i < CANTIDAD_RUBROS; j++){
+    for(j = 0; j < CANTIDAD_RUBROS; j++){
       acumulador[i] += indicesDeProvinciaPorRubro[i][j];
     }
   }
@@ -26,7 +27,7 @@ void imprimirAcumulador(float acumulador[CANTIDAD_PROVINCIAS])
 {
   int i;
 
-  printf("%-15s%-15s", "Provincia", "Indice");
+  printf("%-15s%-15s\n", "Provincia", "Indice");
   for(i = 0; i < CANTIDAD_PROVINCIAS; i++){
     printf("%-15d%-15.2f\n", i, acumulador[i]);
   }
