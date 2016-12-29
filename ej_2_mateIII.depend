@@ -1,13 +1,16 @@
 # depslib dependency file v1.0
-1482967805 source:l:\projects\c\ej_2_mateiii\main.c
+1482967935 source:l:\projects\c\ej_2_mateiii\main.c
 	<stdio.h>
 	<stdlib.h>
+	"header_carga.h"
+	"header_funciones.h"
+	"estructuras_datos.h"
 
 1482964551 l:\projects\c\ej_2_mateiii\estructuras_datos.h
 
 1482965015 l:\projects\c\ej_2_mateiii\header_funciones.h
 	"estructuras_datos.h"
 
-1482966735 l:\projects\c\ej_2_mateiii\header_carga.h
+1482967044 l:\projects\c\ej_2_mateiii\header_carga.h
 	"estructuras_datos.h"
 
