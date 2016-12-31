@@ -6,16 +6,13 @@
 
 int main()
 {
-    int i, j;
-    float indicesDeProvinciaPorRubro[CANTIDAD_PROVINCIAS][CANTIDAD_RUBROS];
+    float indicesDeProvinciaPorRubro[CANTIDAD_PROVINCIAS][CANTIDAD_RUBROS], acumulador[CANTIDAD_PROVINCIAS];
 
     cargarIndicesProvinciaRubro(indicesDeProvinciaPorRubro);
-    for (i = 0; i< CANTIDAD_PROVINCIAS; i++){
-      for(j = 0; j < CANTIDAD_RUBROS; j++){
-        printf("%.2f\n", indicesDeProvinciaPorRubro[i][j]);
-      }
-    }
-    nuevoIndiceProvincial(indicesDeProvinciaPorRubro);
+
+    // Nuevo indice provincial para cada provincia
+    nuevoIndiceProvincial(indicesDeProvinciaPorRubro, acumulador);
+    imprimirAcumulador(acumulador);
 
     return 0;
 }

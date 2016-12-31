@@ -8,9 +8,21 @@
 
 1482964551 l:\projects\c\ej_2_mateiii\estructuras_datos.h
 
-1482965015 l:\projects\c\ej_2_mateiii\header_funciones.h
+1483148981 l:\projects\c\ej_2_mateiii\header_funciones.h
 	"estructuras_datos.h"
 
 1482967044 l:\projects\c\ej_2_mateiii\header_carga.h
+	"estructuras_datos.h"
+
+1482967041 source:l:\projects\c\ej_2_mateiii\funciones_carga.c
+	<stdio.h>
+	<stdlib.h>
+	"header_carga.h"
+	"estructuras_datos.h"
+
+1483148993 source:l:\projects\c\ej_2_mateiii\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	"header_funciones.h"
 	"estructuras_datos.h"
 
