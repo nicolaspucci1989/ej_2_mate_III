@@ -8,9 +8,9 @@
   Inflación nacional
   A continuación recolecta de las 23 provincias y de 40 rubros los índices medidos en cada uno de ellos con los que de su promedio se conseguirán los nuevos índices provinciales de inflación
 
-  Nro de provincia.
-  Nro de rubro.
-  Índice provincial.
+* Nro de provincia.
+* Nro de rubro.
+* Índice provincial.
 
 > Se desea saber
 *	Nuevo índice provincial para cada provincia
