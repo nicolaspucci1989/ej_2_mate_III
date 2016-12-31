@@ -1,5 +1,5 @@
 #2do ejercicio de repaso
-> El INDEC comenzó a trabajar con el nuevo gobierno intentando sincerar los números de la inflación en nuestro país. Para ello tiene una planilla con los índices de inflación mensual del año 2015.
+El INDEC comenzó a trabajar con el nuevo gobierno intentando sincerar los números de la inflación en nuestro país. Para ello tiene una planilla con los índices de inflación mensual del año 2015.
 * Mes 
 * Inflación nacional
   
