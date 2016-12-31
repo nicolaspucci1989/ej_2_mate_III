@@ -12,3 +12,17 @@ void cargarIndicesProvinciaRubro(float indicesDeProvinciaPorRubro[CANTIDAD_PROVI
 		indicesDeProvinciaPorRubro[1][0] = 10.2;
 		indicesDeProvinciaPorRubro[1][1] = 7.2;
 }
+
+void cargarInflacionPasada(float inflacionPasada[])
+{
+	inflacionPasada[0] = 2.45;
+	inflacionPasada[1] = 7.5;
+	inflacionPasada[2] = 3.90;
+}
+
+void cargarInflacionActual(float inflacionActual[])
+{
+	inflacionActual[0] = 9.50;
+	inflacionActual[1] = 1.20;
+	inflacionActual[2] = 8.10;
+}

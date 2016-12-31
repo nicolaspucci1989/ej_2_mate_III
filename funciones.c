@@ -8,8 +8,6 @@ void nuevoIndiceProvincial( float indicesDeProvinciaPorRubro[CANTIDAD_PROVINCIAS
 {
   int i, j;
 
-  inicializarAcumulador(acumulador);
-
   for(i = 0; i < CANTIDAD_PROVINCIAS; i++){
     for(j = 0; j < CANTIDAD_RUBROS; j++){
       acumulador[i] += indicesDeProvinciaPorRubro[i][j];
@@ -22,22 +20,21 @@ void nuevoIndiceProvincial( float indicesDeProvinciaPorRubro[CANTIDAD_PROVINCIAS
 
 } // fin nuevoIndiceProvincial
 
-void imprimirAcumulador(float acumulador[CANTIDAD_PROVINCIAS])
+void imprimirVector(float vector[], int cantidadElementos)
 {
   int i;
 
-  printf("%-15s%-15s\n", "Provincia", "Indice");
-  for(i = 0; i < CANTIDAD_PROVINCIAS; i++){
-    printf("%-15d%-15.2f\n", i, acumulador[i]);
+  for(i = 0; i < cantidadElementos; i++){
+    printf("%-15d%-15.2f\n", i, vector[i]);
   }
 } // fin imprimir acumulador
 
-void inicializarAcumulador( float acumulador[CANTIDAD_PROVINCIAS])
+void inicializarVector( float vector[], int cantidadElementos)
 {
   int i;
 
-  for(i = 0; i < CANTIDAD_PROVINCIAS; i++){
-    acumulador[i] = 0;
+  for(i = 0; i < cantidadElementos; i++){
+    vector[i] = 0;
   }
 } // fin inicializar acumulador
 
@@ -51,4 +48,13 @@ float nuevoIndiceMensualNacional(float acumulador[CANTIDAD_PROVINCIAS])
   }
 
   return acum / CANTIDAD_PROVINCIAS;
+}
+
+void inflacionAcumulada(float inflacionPasada[], float inflacionActual[], float acumulador[])
+{
+  int i;
+
+  for(i = 0; i < CANTIDAD_MESES; i++){
+      acumulador[i] = inflacionPasada[i] - inflacionActual[i];
+  }
 }
