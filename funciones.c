@@ -6,7 +6,6 @@
 void nuevoIndiceProvincial( float indicesDeProvinciaPorRubro[CANTIDAD_PROVINCIAS][CANTIDAD_RUBROS],
                             float acumulador[CANTIDAD_PROVINCIAS])
 {
-  void inicializarAcumulador(float acumulador[CANTIDAD_PROVINCIAS]);
   int i, j;
 
   inicializarAcumulador(acumulador);
@@ -41,3 +40,15 @@ void inicializarAcumulador( float acumulador[CANTIDAD_PROVINCIAS])
     acumulador[i] = 0;
   }
 } // fin inicializar acumulador
+
+float nuevoIndiceMensualNacional(float acumulador[CANTIDAD_PROVINCIAS])
+{
+  int i;
+  float acum = 0;
+
+  for(i = 0; i < CANTIDAD_PROVINCIAS; i++){
+    acum += acumulador[i];
+  }
+
+  return acum / CANTIDAD_PROVINCIAS;
+}

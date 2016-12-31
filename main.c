@@ -14,5 +14,10 @@ int main()
     nuevoIndiceProvincial(indicesDeProvinciaPorRubro, acumulador);
     imprimirAcumulador(acumulador);
 
+    // Nuevo indice mensual nacional
+    inicializarAcumulador(acumulador);
+    nuevoIndiceProvincial(indicesDeProvinciaPorRubro, acumulador);
+    printf("Nuevo indice mensual nacional %.2f\n", nuevoIndiceMensualNacional(acumulador));
+
     return 0;
 }
